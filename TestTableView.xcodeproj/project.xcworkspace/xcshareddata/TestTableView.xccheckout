@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0E141E35-BC3E-4DCE-A14A-F238351635FB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TestTableView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D8A2B30D-FE41-42AE-BFC3-5695DB02D0E5</key>
+		<string>https://github.com/OffensivelyBad/simple_table_view.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TestTableView.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D8A2B30D-FE41-42AE-BFC3-5695DB02D0E5</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/OffensivelyBad/simple_table_view.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D8A2B30D-FE41-42AE-BFC3-5695DB02D0E5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D8A2B30D-FE41-42AE-BFC3-5695DB02D0E5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TestTableView</string>
+		</dict>
+	</array>
+</dict>
+</plist>

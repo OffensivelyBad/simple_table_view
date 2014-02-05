@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TestTableCell.h"
 
 @interface ViewController ()
 
@@ -15,6 +16,7 @@
 @implementation ViewController
 {
     NSArray *recipes;
+    NSArray *thumbnails;
 }
 
 - (void)viewDidLoad
@@ -22,6 +24,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     recipes = [NSArray arrayWithObjects:@"testing1", @"testing3", nil];
+    thumbnails = [NSArray arrayWithObjects:@"creme_brelee.jpg",@"creme_brelee.jpg",nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,15 +40,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *tableViewCell = @"tableViewCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:tableViewCell];
+    static NSString *tableViewCell = @"TestTableCell";
+    TestTableCell *cell = (TestTableCell *)[tableView dequeueReusableCellWithIdentifier:tableViewCell];
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableViewCell];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"TestTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = [recipes objectAtIndex:indexPath.row];
+    cell.nameLabel.text = recipes[indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:thumbnails[indexPath.row]];
+    
+//    cell.textLabel.text = recipes[indexPath.row];
+//    cell.imageView.image = [UIImage imageNamed:thumbnails[indexPath.row]];
     return cell;
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return 100;
+//}
 
 @end

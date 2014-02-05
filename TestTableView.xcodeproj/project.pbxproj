@@ -21,6 +21,9 @@
 		29829717189EFF74008C1C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 298296F9189EFF74008C1C38 /* UIKit.framework */; };
 		2982971F189EFF74008C1C38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2982971D189EFF74008C1C38 /* InfoPlist.strings */; };
 		29829721189EFF74008C1C38 /* TestTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29829720189EFF74008C1C38 /* TestTableViewTests.m */; };
+		2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2982972A18A1FD23008C1C38 /* creme_brelee.jpg */; };
+		2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2982972C18A1FFC9008C1C38 /* TestTableCell.xib */; };
+		2982973018A201EF008C1C38 /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982972F18A201EF008C1C38 /* TestTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		2982971C189EFF74008C1C38 /* TestTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTableViewTests-Info.plist"; sourceTree = "<group>"; };
 		2982971E189EFF74008C1C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		29829720189EFF74008C1C38 /* TestTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewTests.m; sourceTree = "<group>"; };
+		2982972A18A1FD23008C1C38 /* creme_brelee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = creme_brelee.jpg; sourceTree = "<group>"; };
+		2982972C18A1FFC9008C1C38 /* TestTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableCell.xib; sourceTree = "<group>"; };
+		2982972E18A201EF008C1C38 /* TestTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
+		2982972F18A201EF008C1C38 /* TestTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +119,15 @@
 		298296FB189EFF74008C1C38 /* TestTableView */ = {
 			isa = PBXGroup;
 			children = (
+				2982972A18A1FD23008C1C38 /* creme_brelee.jpg */,
 				29829704189EFF74008C1C38 /* AppDelegate.h */,
 				29829705189EFF74008C1C38 /* AppDelegate.m */,
 				29829707189EFF74008C1C38 /* Main.storyboard */,
 				2982970A189EFF74008C1C38 /* ViewController.h */,
 				2982970B189EFF74008C1C38 /* ViewController.m */,
+				2982972C18A1FFC9008C1C38 /* TestTableCell.xib */,
+				2982972E18A201EF008C1C38 /* TestTableCell.h */,
+				2982972F18A201EF008C1C38 /* TestTableCell.m */,
 				2982970D189EFF74008C1C38 /* Images.xcassets */,
 				298296FC189EFF74008C1C38 /* Supporting Files */,
 			);
@@ -229,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2982970E189EFF74008C1C38 /* Images.xcassets in Resources */,
+				2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */,
+				2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */,
 				29829700189EFF74008C1C38 /* InfoPlist.strings in Resources */,
 				29829709189EFF74008C1C38 /* Main.storyboard in Resources */,
 			);
@@ -251,6 +264,7 @@
 			files = (
 				2982970C189EFF74008C1C38 /* ViewController.m in Sources */,
 				29829706189EFF74008C1C38 /* AppDelegate.m in Sources */,
+				2982973018A201EF008C1C38 /* TestTableCell.m in Sources */,
 				29829702189EFF74008C1C38 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +474,7 @@
 				29829726189EFF74008C1C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		29829727189EFF74008C1C38 /* Build configuration list for PBXNativeTarget "TestTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +483,7 @@
 				29829729189EFF74008C1C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
