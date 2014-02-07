@@ -24,6 +24,7 @@
 		2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2982972A18A1FD23008C1C38 /* creme_brelee.jpg */; };
 		2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2982972C18A1FFC9008C1C38 /* TestTableCell.xib */; };
 		2982973018A201EF008C1C38 /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982972F18A201EF008C1C38 /* TestTableCell.m */; };
+		29FE498018A599DA00646F85 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FE497F18A599DA00646F85 /* recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		2982972C18A1FFC9008C1C38 /* TestTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableCell.xib; sourceTree = "<group>"; };
 		2982972E18A201EF008C1C38 /* TestTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
 		2982972F18A201EF008C1C38 /* TestTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
+		29FE497F18A599DA00646F85 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				29829707189EFF74008C1C38 /* Main.storyboard */,
 				2982970A189EFF74008C1C38 /* ViewController.h */,
 				2982970B189EFF74008C1C38 /* ViewController.m */,
+				29FE497F18A599DA00646F85 /* recipes.plist */,
 				2982972C18A1FFC9008C1C38 /* TestTableCell.xib */,
 				2982972E18A201EF008C1C38 /* TestTableCell.h */,
 				2982972F18A201EF008C1C38 /* TestTableCell.m */,
@@ -241,6 +244,7 @@
 			files = (
 				2982970E189EFF74008C1C38 /* Images.xcassets in Resources */,
 				2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */,
+				29FE498018A599DA00646F85 /* recipes.plist in Resources */,
 				2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */,
 				29829700189EFF74008C1C38 /* InfoPlist.strings in Resources */,
 				29829709189EFF74008C1C38 /* Main.storyboard in Resources */,
