@@ -17,14 +17,16 @@
 {
     NSArray *recipes;
     NSArray *thumbnails;
+    NSArray *prepTimes;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    recipes = [NSArray arrayWithObjects:@"testing1", @"testing3", nil];
+    recipes = [NSArray arrayWithObjects:@"Creme Brulee", @"Cheese Stuffs", nil];
     thumbnails = [NSArray arrayWithObjects:@"creme_brelee.jpg",@"creme_brelee.jpg",nil];
+    prepTimes = [NSArray arrayWithObjects:@"30 min",@"20 min", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,15 +52,27 @@
     
     cell.nameLabel.text = recipes[indexPath.row];
     cell.thumbnailImageView.image = [UIImage imageNamed:thumbnails[indexPath.row]];
+    cell.timeLabel.text = prepTimes[indexPath.row];
     
 //    cell.textLabel.text = recipes[indexPath.row];
 //    cell.imageView.image = [UIImage imageNamed:thumbnails[indexPath.row]];
     return cell;
 }
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    return 100;
-//}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *alertItem = @"You've selected ";
+    NSString *recipeItem = recipes[indexPath.row];
+    NSString *alertMessage = [NSString stringWithFormat:@"%@%@",alertItem, recipeItem];
+    UIAlertView *messageAlert = [[UIAlertView alloc]
+                                 initWithTitle:@"Row Selected" message:alertMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    
+    // Display Alert Message
+    [messageAlert show];
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 
 @end
