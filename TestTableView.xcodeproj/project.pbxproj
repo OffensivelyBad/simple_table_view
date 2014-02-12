@@ -24,6 +24,8 @@
 		2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2982972A18A1FD23008C1C38 /* creme_brelee.jpg */; };
 		2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2982972C18A1FFC9008C1C38 /* TestTableCell.xib */; };
 		2982973018A201EF008C1C38 /* TestTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2982972F18A201EF008C1C38 /* TestTableCell.m */; };
+		29ACAB0F18AB286D000FAFC9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 29ACAB0D18AB286D000FAFC9 /* Default.png */; };
+		29ACAB1018AB286D000FAFC9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 29ACAB0E18AB286D000FAFC9 /* Default@2x.png */; };
 		29FE498018A599DA00646F85 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FE497F18A599DA00646F85 /* recipes.plist */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		2982972C18A1FFC9008C1C38 /* TestTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableCell.xib; sourceTree = "<group>"; };
 		2982972E18A201EF008C1C38 /* TestTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableCell.h; sourceTree = "<group>"; };
 		2982972F18A201EF008C1C38 /* TestTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableCell.m; sourceTree = "<group>"; };
+		29ACAB0D18AB286D000FAFC9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = TestTableView/Default.png; sourceTree = "<group>"; };
+		29ACAB0E18AB286D000FAFC9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "TestTableView/Default@2x.png"; sourceTree = "<group>"; };
 		29FE497F18A599DA00646F85 /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,8 @@
 		298296E9189EFF74008C1C38 = {
 			isa = PBXGroup;
 			children = (
+				29ACAB0E18AB286D000FAFC9 /* Default@2x.png */,
+				29ACAB0D18AB286D000FAFC9 /* Default.png */,
 				298296FB189EFF74008C1C38 /* TestTableView */,
 				2982971A189EFF74008C1C38 /* TestTableViewTests */,
 				298296F4189EFF74008C1C38 /* Frameworks */,
@@ -242,10 +248,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29ACAB1018AB286D000FAFC9 /* Default@2x.png in Resources */,
 				2982970E189EFF74008C1C38 /* Images.xcassets in Resources */,
 				2982972B18A1FD23008C1C38 /* creme_brelee.jpg in Resources */,
 				29FE498018A599DA00646F85 /* recipes.plist in Resources */,
 				2982972D18A1FFC9008C1C38 /* TestTableCell.xib in Resources */,
+				29ACAB0F18AB286D000FAFC9 /* Default.png in Resources */,
 				29829700189EFF74008C1C38 /* InfoPlist.strings in Resources */,
 				29829709189EFF74008C1C38 /* Main.storyboard in Resources */,
 			);

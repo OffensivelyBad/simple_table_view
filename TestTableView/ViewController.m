@@ -15,9 +15,9 @@
 
 @implementation ViewController
 {
-    NSArray *recipes;
-    NSArray *thumbnails;
-    NSArray *prepTimes;
+    NSMutableArray *recipes;
+    NSMutableArray *thumbnails;
+    NSMutableArray *prepTimes;
 }
 
 - (void)viewDidLoad
@@ -26,9 +26,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    recipes = [dict objectForKey:@"RecipeName"];
-    thumbnails = [dict objectForKey:@"Thumbnail"];
-    prepTimes = [dict objectForKey:@"PrepTime"];
+    recipes = [[dict objectForKey:@"RecipeName"]mutableCopy];
+    thumbnails = [[dict objectForKey:@"Thumbnail"]mutableCopy];
+    prepTimes = [[dict objectForKey:@"PrepTime"]mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,6 +75,26 @@
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView beginUpdates];
+
+    if(editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [recipes removeObjectAtIndex:indexPath.row];
+        [thumbnails removeObjectAtIndex:indexPath.row];
+        [prepTimes removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+    [tableView endUpdates];
+    
+//    [recipes removeObjectAtIndex:indexPath.row];
+//    [thumbnails removeObjectAtIndex:indexPath.row];
+//    [prepTimes removeObjectAtIndex:indexPath.row];
+//    [tableView reloadData];
 }
 
 @end
